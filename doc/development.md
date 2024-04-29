@@ -1,3 +1,18 @@
+# Required windows to run locally
+
+Admin CMD prompt (MongoDB):  
+mongod.exe --dbpath="D:\Applications\MongoDB\data\db"  
+
+GitBash window #1 (frontend):  
+cd /d/Users/sjbal/Documents/Development/pi/demo/backend  
+yarn startWin
+
+GitBash window #2 (backend):  
+cd /d/Users/sjbal/Documents/Development/pi/demo/frontend  
+yarn startNode17
+
+
+
 # Pi Platform Demo App: Development Environment
 
 The following document explains how to set up a development environment and run the Pi Platform Demo App in the

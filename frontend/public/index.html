@@ -37,6 +37,8 @@
       window.__ENV = {
         backendURL: "%REACT_APP_BACKEND_URL%",
         sandbox: "%REACT_APP_SANDBOX_SDK%",
+        platform_api_url: "%REACT_APP_PLATFORM_API_URL%",
+        pi_api_key: "%REACT_APP_PI_API_KEY%",
       }
     </script>
 
@@ -45,8 +47,7 @@
     
     <!-- TODO make sandbox conditional to env (dev / prod) -->
     <script>
-      // Make the decision whether Pi SDK should run in "Sandbox" mode or "Pi Browser" mode based on the
-      // dedicated environment variable:
+      // Make the decision whether Pi SDK should run in "Sandbox" mode or "Pi Browser" mode based on the dedicated environment variable:
       var runSDKInSandboxMode = window.__ENV.sandbox === "true"; // treat env vars as strings, not booleans
       
       // Init Pi SDK:

@@ -92,6 +92,9 @@ Then, recreate the container using the `docker run` command above.
 Install MongoDB Community following the
 [official documentation](https://www.mongodb.com/docs/manual/administration/install-community/).
 
+To start the MongoDB server:  
+`mongod.exe --dbpath="D:\Applications\MongoDB\data\db"`
+
 Run the server and create a database and a user:
 
 Open a Mongo shell by running `mongosh`, then paste the following JS code into it:
@@ -119,7 +122,7 @@ To preview the database, you can use Robo3T or MongoDB Compass.
 
 ### 3. Run the server
 
-Start the server with the following command (inside of the `backend` directory): `yarn start`.
+Start the server with the following command (inside of the `backend` directory): `yarn startWin`.
 
 If everything is set up correctly you should see the following output in your terminal:
 
